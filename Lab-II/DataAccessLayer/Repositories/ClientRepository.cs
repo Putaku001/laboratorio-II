@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CommonLayer.Entidades;
+using CommonLayer.Entities;
 using Microsoft.Data.SqlClient;
 using DataAccessLayer.dbConnect;
 using System.Data;
 
-namespace DataAccessLayer.RepositorioDeClientes
+namespace DataAccessLayer.Repositories
 {
     public class ClientRepository
     {
@@ -18,22 +18,23 @@ namespace DataAccessLayer.RepositorioDeClientes
         {
             _dbConnect = new SqlConnect();
         }
-        public DataTable GetVehiculo()
+        public DataTable GetClient()
         {
-            DataTable VehiculoTable = new DataTable();
+            DataTable ClientsTable = new DataTable();
+
             using (var connection = _dbConnect.GetConnection())
             {
-                string query = @"SELECT VehiculoId, Marca, Modelo FROM Vehiculos";
+                string query = "SELECT ClientId, Nombre, Telefono,Email FROM Clientes";
                 using (var sqlcommand = new SqlCommand(query, connection))
                 {
                     connection.Open();
                     using (SqlDataReader reader = sqlcommand.ExecuteReader())
                     {
-                        VehiculoTable.Load(reader);
+                        ClientsTable.Load(reader);
                     }
                 }
             }
-            return VehiculoTable;
+            return ClientsTable;
         }
 
     }

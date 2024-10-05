@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonLayer.Entidades
+namespace CommonLayer.Entities
 {
     public class Client
     {
-        public int ClienteID { get; set; }
-        public string Nombre { get; set; }
-        public string Telefono { get; set; }
+        public int ClientID { get; set; }
+        public string Name { get; set; }
+        public string Telephone { get; set; }
         public string Email { get; set; }
     }
 }

@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\PresentationLayer.csproj",
-      "projectName": "PresentationLayer",
-      "projectPath": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\PresentationLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\presents.csproj",
+      "projectName": "presents",
+      "projectPath": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\presents.csproj",
       "packagesPath": "C:\\Users\\ivanb\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\obj\\",
       "projectStyle": "PackageReference",

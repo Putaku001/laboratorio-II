@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonLayer.Entidades
+namespace CommonLayer.Entities
 {
     public class Rent
     {
-        public int RentaID { get; set; }
-        public int ClienteID { get; set; }
-        public int VehiculoID { get; set; }
-        public DateTime FechaRenta { get; set; }
-        public DateTime? FechaDevolucion { get; set; }
+        public int RentID { get; set; }
+        public int ClientID { get; set; }
+        public int CArID { get; set; }
+        public DateTime RentDate { get; set; }
+        public DateTime? ReturnDate{ get; set; }
     }
 }

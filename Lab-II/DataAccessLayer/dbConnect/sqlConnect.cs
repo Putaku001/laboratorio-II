@@ -16,7 +16,7 @@ namespace DataAccessLayer.dbConnect
 
         public SqlConnect()
         {
-            _connectionString = "Data Source=DESKTOP-OKJJS3Y\\SQLEXPRESS;Initial Catalog=RentaVehiculosDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            _connectionString = "Data Source=.;Initial Catalog=SistemaRentaAutos;Integrated Security=True;Encrypt=False";
         }
 
         public SqlConnection GetConnection()
@@ -25,3 +25,4 @@ namespace DataAccessLayer.dbConnect
         }
     }
 }
+ 

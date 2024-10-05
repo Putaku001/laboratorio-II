@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CommonLayer.Entidades
+namespace CommonLayer.Entities
 {
     public class Car
     {
-        public int VehiculoID { get; set; }
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
-        public int Año { get; set; }
-        public bool Disponibilidad { get; set; }
+        public int CarId { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+        public bool Availability { get; set; }
     }
 }

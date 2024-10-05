@@ -7,12 +7,48 @@
       "RelativeMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dbconnect\\sqlconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\dataaccesslayer\\repositories\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78A00A32-4B48-41BD-84C8-6734638AB0D5}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\presentationlayer\\validations\\carvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A00A32-4B48-41BD-84C8-6734638AB0D5}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\validations\\carvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\presentatiolayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|solutionrelative:presentatiolayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\dataaccesslayer\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\dataaccesslayer\\repositories\\rentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\rentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\commonlayer\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|solutionrelative:commonlayer\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|solutionrelative:presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|solutionrelative:presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\commonlayer\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|solutionrelative:commonlayer\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45B17694-1C99-4048-94D7-6CAECD3CD541}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\businesslayer\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45B17694-1C99-4048-94D7-6CAECD3CD541}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45B17694-1C99-4048-94D7-6CAECD3CD541}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\businesslayer\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45B17694-1C99-4048-94D7-6CAECD3CD541}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\commonlayer\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|solutionrelative:commonlayer\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +70,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\Repositories\\RentRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\RentRepository.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\Repositories\\RentRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\RentRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:14:38.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\ClientRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:09:40.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataAccessLayer.csproj",
-              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
-              "RelativeToolTip": "DataAccessLayer\\DataAccessLayer.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-05T05:23:49.953Z",
+              "Title": "CarRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\Repositories\\CarRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Repositories\\CarRepository.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\Repositories\\CarRepository.cs",
+              "RelativeToolTip": "DataAccessLayer\\Repositories\\CarRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:09:38.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\BusinessLayer\\Services\\CarService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Services\\CarService.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\BusinessLayer\\Services\\CarService.cs",
+              "RelativeToolTip": "BusinessLayer\\Services\\CarService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:08:41.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CarsForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentatioLayer\\Forms\\CarsForm.cs",
+              "RelativeDocumentMoniker": "PresentatioLayer\\Forms\\CarsForm.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentatioLayer\\Forms\\CarsForm.cs",
+              "RelativeToolTip": "PresentatioLayer\\Forms\\CarsForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:46:35.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CarValidation.cs",
-              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\Validations\\CarValidation.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Validations\\CarValidation.cs",
-              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\Validations\\CarValidation.cs",
-              "RelativeToolTip": "PresentationLayer\\Validations\\CarValidation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentatioLayer\\Program.cs",
+              "RelativeDocumentMoniker": "PresentatioLayer\\Program.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentatioLayer\\Program.cs",
+              "RelativeToolTip": "PresentatioLayer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T05:21:05.567Z",
+              "WhenOpened": "2024-10-05T19:19:44.092Z",
               "EditorCaption": ""
             },
             {
@@ -66,9 +154,73 @@
               "RelativeDocumentMoniker": "DataAccessLayer\\dbConnect\\sqlConnect.cs",
               "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\dbConnect\\sqlConnect.cs",
               "RelativeToolTip": "DataAccessLayer\\dbConnect\\sqlConnect.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAgwBsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T05:19:05.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CarsForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentatioLayer\\Forms\\CarsForm.cs",
+              "RelativeDocumentMoniker": "PresentatioLayer\\Forms\\CarsForm.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentatioLayer\\Forms\\CarsForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PresentatioLayer\\Forms\\CarsForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:38:13.489Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\Entities\\Car.cs",
+              "RelativeDocumentMoniker": "CommonLayer\\Entities\\Car.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\Entities\\Car.cs",
+              "RelativeToolTip": "CommonLayer\\Entities\\Car.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:03:28.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rent.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\Entities\\Rent.cs",
+              "RelativeDocumentMoniker": "CommonLayer\\Entities\\Rent.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\Entities\\Rent.cs",
+              "RelativeToolTip": "CommonLayer\\Entities\\Rent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:06:20.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\BusinessLayer\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\BusinessLayer\\Services\\ClientService.cs",
+              "RelativeToolTip": "BusinessLayer\\Services\\ClientService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:13:16.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\Entities\\Client.cs",
+              "RelativeDocumentMoniker": "CommonLayer\\Entities\\Client.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\Entities\\Client.cs",
+              "RelativeToolTip": "CommonLayer\\Entities\\Client.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T18:06:02.503Z",
               "EditorCaption": ""
             }
           ]

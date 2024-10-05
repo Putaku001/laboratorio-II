@@ -4,18 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using DataAccessLayer.Repositorio;
+using DataAccessLayer.Repositories;
 
-namespace BusinessLayer.Servicio
+
+namespace BusinessLayer.Services
 {
     public class CarService
     {
-        private RepositorioDeVehiculos _RepositorioDeVehiculos;
+        private CarRepository _carRepository;
 
         public CarService()
         {
-            _RepositorioDeVehiculos = new RepositorioDeVehiculos();
+            _carRepository = new CarRepository();
         }
+
+        public DataTable GetAllCars()
+        {
+            return _carRepository.GetCars();
+        }
+            
+
         
     }
 }

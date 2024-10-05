@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace BusinessLayer.Servicio
+namespace BusinessLayer.Services
 {
     public class ClientService
     {

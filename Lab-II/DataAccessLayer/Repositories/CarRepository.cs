@@ -1,4 +1,4 @@
-﻿using CommonLayer.Entidades;
+﻿
 using DataAccessLayer.dbConnect;
 using Microsoft.Data.SqlClient;
 using System;
@@ -7,8 +7,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommonLayer.Entities;
 
-namespace DataAccessLayer.Repositorio
+namespace DataAccessLayer.Repositories
 {
     public class CarRepository
     {
@@ -19,9 +20,9 @@ namespace DataAccessLayer.Repositorio
             _dbConnect = new SqlConnect();
         }
 
-        public DataTable GetVehiculos()
+        public DataTable GetCars()
         {
-            DataTable vehiculoTable = new DataTable();
+            DataTable CarsTable = new DataTable();
 
             using (var connection = _dbConnect.GetConnection())
             {
@@ -31,49 +32,49 @@ namespace DataAccessLayer.Repositorio
                 connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();
-                vehiculoTable.Load(reader);
+                CarsTable.Load(reader);
             }
-            return vehiculoTable;
+            return CarsTable;
         }
-        public void addVehiculo(Vehiculos vehiculos)
+        public void addCars(Car car)
         {
             using (var connection = _dbConnect.GetConnection())
             {
                 string query = "INSERT INTO Vehiculos (Marca, Modelo, Año, Disponibilidad) VALUES (@Marca, @Modelo, @Año, @Disponibilidad)D";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Marca", vehiculos.Marca);
-                command.Parameters.AddWithValue("@Modelo", vehiculos.Modelo);
-                command.Parameters.AddWithValue("@Año", vehiculos.Año);
-                command.Parameters.AddWithValue("@Disponibilidad", vehiculos.Disponibilidad);
+                command.Parameters.AddWithValue("@Marca", car.Brand);
+                command.Parameters.AddWithValue("@Modelo", car.Model);
+                command.Parameters.AddWithValue("@Año", car.Year);
+                command.Parameters.AddWithValue("@Disponibilidad", car.Availability);
                 connection.Open();
 
                 command.ExecuteNonQuery();
             }
         }
-        public void EditVehiculo(Vehiculos vehiculos)
+        public void EditCar(Car car)
         {
             using (var connection = _dbConnect.GetConnection())
             {
                 string query = "UPDATE Vehiculos SET Marca = @Marca, Modelo = @Modelo, Año = @Año, Disponibilidad = @Disponibilidad WHERE VehiculoID = @VehiculoID";
                 SqlCommand command = new SqlCommand(query, connection);
 
-                command.Parameters.AddWithValue("@VehiculoID", vehiculos.VehiculoID);
-                command.Parameters.AddWithValue("@Marca", vehiculos.Marca);
-                command.Parameters.AddWithValue("@Modelo", vehiculos.Modelo);
-                command.Parameters.AddWithValue("@Año", vehiculos.Año);
-                command.Parameters.AddWithValue("@Disponibilidad", vehiculos.Disponibilidad);
+                command.Parameters.AddWithValue("@VehiculoID",car.CarId);
+                command.Parameters.AddWithValue("@Marca", car.Brand);
+                command.Parameters.AddWithValue("@Modelo", car.Model);
+                command.Parameters.AddWithValue("@Año", car.Year);
+                command.Parameters.AddWithValue("@Disponibilidad", car.Availability);
                 connection.Open();
 
                 command.ExecuteNonQuery();
             }
         }
-        public void DeleteVehiculo(int VehiculoId)
+        public void DeleteVehiculo(int CarId)
         {
             using (var connection = _dbConnect.GetConnection())
             {
                 string query = "DELETE FROM Vehiculos WHERE VehiculoID = @VehiculoID";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@VehiculoID", VehiculoId);
+                command.Parameters.AddWithValue("@VehiculoID", CarId);
                 connection.Open();
 
                 command.ExecuteNonQuery();

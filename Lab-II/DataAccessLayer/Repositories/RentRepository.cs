@@ -1,4 +1,4 @@
-﻿using CommonLayer.Entidades; 
+﻿using CommonLayer.Entities;
 using DataAccessLayer.dbConnect;
 using Microsoft.Data.SqlClient;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Repositorio
+namespace DataAccessLayer.Repositories
 {
     public class RentRepository
     {
@@ -19,9 +19,9 @@ namespace DataAccessLayer.Repositorio
             _dbConnect = new SqlConnect();
         }
 
-        public DataTable GetRentas()
+        public DataTable GetRents()
         {
-            DataTable rentaTable = new DataTable();
+            DataTable rentsTable = new DataTable();
 
             using (var connection = _dbConnect.GetConnection())
             {
@@ -31,52 +31,52 @@ namespace DataAccessLayer.Repositorio
                 connection.Open();
 
                 SqlDataReader reader = command.ExecuteReader();
-                rentaTable.Load(reader);
+                rentsTable.Load(reader);
             }
-            return rentaTable;
+            return rentsTable;
         }
 
-        public void AddRenta(Renta renta)
+        public void AddRent(Rent rent)
         {
             using (var connection = _dbConnect.GetConnection())
             {
                 string query = "INSERT INTO Rentas (ClienteID, VehiculoID, FechaRenta, FechaDevolucion) VALUES (@ClienteID, @VehiculoID, @FechaRenta, @FechaDevolucion)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@ClienteID", renta.ClienteID);
-                command.Parameters.AddWithValue("@VehiculoID", renta.VehiculoID);
-                command.Parameters.AddWithValue("@FechaRenta", renta.FechaRenta);
-                command.Parameters.AddWithValue("@FechaDevolucion", renta.FechaDevolucion);
+                command.Parameters.AddWithValue("@ClienteID", rent.ClientID);
+                command.Parameters.AddWithValue("@VehiculoID", rent.RentID);
+                command.Parameters.AddWithValue("@FechaRenta", rent.RentDate);
+                command.Parameters.AddWithValue("@FechaDevolucion", rent.ReturnDate);
                 connection.Open();
 
                 command.ExecuteNonQuery();
             }
         }
 
-        public void EditRenta(Renta renta)
+        public void EditRent(Rent rent)
         {
             using (var connection = _dbConnect.GetConnection())
             {
                 string query = "UPDATE Rentas SET ClienteID = @ClienteID, VehiculoID = @VehiculoID, FechaRenta = @FechaRenta, FechaDevolucion = @FechaDevolucion WHERE RentaID = @RentaID";
                 SqlCommand command = new SqlCommand(query, connection);
 
-                command.Parameters.AddWithValue("@RentaID", renta.RentaID);
-                command.Parameters.AddWithValue("@ClienteID", renta.ClienteID);
-                command.Parameters.AddWithValue("@VehiculoID", renta.VehiculoID);
-                command.Parameters.AddWithValue("@FechaRenta", renta.FechaRenta);
-                command.Parameters.AddWithValue("@FechaDevolucion", renta.FechaDevolucion);
+                command.Parameters.AddWithValue("@RentaID", rent.RentID);
+                command.Parameters.AddWithValue("@ClienteID", rent.ClientID);
+                command.Parameters.AddWithValue("@VehiculoID", rent.CArID);
+                command.Parameters.AddWithValue("@FechaRenta", rent.RentDate);
+                command.Parameters.AddWithValue("@FechaDevolucion", rent.ReturnDate);
                 connection.Open();
 
                 command.ExecuteNonQuery();
             }
         }
 
-        public void DeleteRenta(int rentaId)
+        public void DeleteRenta(int rentId)
         {
             using (var connection = _dbConnect.GetConnection())
             {
                 string query = "DELETE FROM Rentas WHERE RentaID = @RentaID";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@RentaID", rentaId);
+                command.Parameters.AddWithValue("@RentaID", rentId);
                 connection.Open();
 
                 command.ExecuteNonQuery();
