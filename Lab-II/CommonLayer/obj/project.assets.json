@@ -8,24 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\blanc_ma7kouo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ivanb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\CommonLayer\\CommonLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\CommonLayer.csproj",
       "projectName": "CommonLayer",
-      "projectPath": "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\CommonLayer\\CommonLayer.csproj",
-      "packagesPath": "C:\\Users\\blanc_ma7kouo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\CommonLayer\\obj\\",
+      "projectPath": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\CommonLayer.csproj",
+      "packagesPath": "C:\\Users\\ivanb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\CommonLayer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\blanc_ma7kouo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ivanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -71,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

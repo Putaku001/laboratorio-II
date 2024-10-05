@@ -585,16 +585,6 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
-      },
-      "CommonLayer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/CommonLayer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CommonLayer.dll": {}
-        }
       }
     }
   },
@@ -1689,38 +1679,27 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "CommonLayer/1.0.0": {
-      "type": "project",
-      "path": "../CommonLayer/CommonLayer.csproj",
-      "msbuildProject": "../CommonLayer/CommonLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CommonLayer >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.2.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\blanc_ma7kouo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ivanb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
-      "packagesPath": "C:\\Users\\blanc_ma7kouo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\DataAccessLayer\\obj\\",
+      "projectPath": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
+      "packagesPath": "C:\\Users\\ivanb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\blanc_ma7kouo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ivanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1733,11 +1712,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\CommonLayer\\CommonLayer.csproj": {
-              "projectPath": "C:\\Users\\blanc_ma7kouo\\Documents\\aprendiendo C#\\Lab-II\\CommonLayer\\CommonLayer.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1776,7 +1751,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
