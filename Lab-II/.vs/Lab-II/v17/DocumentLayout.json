@@ -11,8 +11,8 @@
       "RelativeMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78A00A32-4B48-41BD-84C8-6734638AB0D5}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\presentationlayer\\validaciones\\validaciondevehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78A00A32-4B48-41BD-84C8-6734638AB0D5}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\validaciones\\validaciondevehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78A00A32-4B48-41BD-84C8-6734638AB0D5}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\lab-ii\\presentationlayer\\validations\\carvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A00A32-4B48-41BD-84C8-6734638AB0D5}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\validations\\carvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,7 +35,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DataAccessLayer",
+              "Title": "DataAccessLayer.csproj",
               "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
               "RelativeDocumentMoniker": "DataAccessLayer\\DataAccessLayer.csproj",
               "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\DataAccessLayer.csproj",
@@ -48,11 +48,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ValidacionDeVehiculo.cs",
-              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\Validaciones\\ValidacionDeVehiculo.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\Validaciones\\ValidacionDeVehiculo.cs",
-              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\Validaciones\\ValidacionDeVehiculo.cs",
-              "RelativeToolTip": "PresentationLayer\\Validaciones\\ValidacionDeVehiculo.cs",
+              "Title": "CarValidation.cs",
+              "DocumentMoniker": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\Validations\\CarValidation.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\Validations\\CarValidation.cs",
+              "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\PresentationLayer\\Validations\\CarValidation.cs",
+              "RelativeToolTip": "PresentationLayer\\Validations\\CarValidation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T05:21:05.567Z",
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "DataAccessLayer\\dbConnect\\sqlConnect.cs",
               "ToolTip": "C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\Lab-II\\DataAccessLayer\\dbConnect\\sqlConnect.cs",
               "RelativeToolTip": "DataAccessLayer\\dbConnect\\sqlConnect.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-05T05:19:05.528Z",
               "EditorCaption": ""
