@@ -44,55 +44,59 @@
             availabilityCheckBox = new CheckBox();
             availabilityLabel = new Label();
             backButton = new Button();
+            dataVehicleGroupBox = new GroupBox();
+            registerVehicleDatagroupBox = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)CarsDataGridView).BeginInit();
             tittlePanel.SuspendLayout();
+            registerVehicleDatagroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // CarsDataGridView
             // 
+            CarsDataGridView.BackgroundColor = SystemColors.Control;
             CarsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            CarsDataGridView.Location = new Point(74, 417);
+            CarsDataGridView.Location = new Point(12, 247);
             CarsDataGridView.Name = "CarsDataGridView";
             CarsDataGridView.RowHeadersWidth = 51;
-            CarsDataGridView.Size = new Size(1115, 265);
+            CarsDataGridView.Size = new Size(1031, 232);
             CarsDataGridView.TabIndex = 0;
             // 
             // Tittlelabel
             // 
             Tittlelabel.AutoSize = true;
             Tittlelabel.Font = new Font("Segoe UI", 15F);
-            Tittlelabel.Location = new Point(502, 20);
+            Tittlelabel.Location = new Point(254, 17);
             Tittlelabel.Name = "Tittlelabel";
-            Tittlelabel.Size = new Size(230, 35);
+            Tittlelabel.Size = new Size(195, 28);
             Tittlelabel.TabIndex = 1;
-            Tittlelabel.Text = "registros de  carros";
+            Tittlelabel.Text = "Registro de  Vehiculo";
             // 
             // brandLabel
             // 
             brandLabel.AutoSize = true;
-            brandLabel.Location = new Point(184, 112);
+            brandLabel.Location = new Point(40, 102);
             brandLabel.Name = "brandLabel";
-            brandLabel.Size = new Size(57, 20);
+            brandLabel.Size = new Size(56, 20);
             brandLabel.TabIndex = 2;
-            brandLabel.Text = "marca :";
+            brandLabel.Text = "Marca :";
             // 
             // modelLabel
             // 
             modelLabel.AutoSize = true;
-            modelLabel.Location = new Point(184, 208);
+            modelLabel.Location = new Point(34, 166);
             modelLabel.Name = "modelLabel";
-            modelLabel.Size = new Size(68, 20);
+            modelLabel.Size = new Size(62, 20);
             modelLabel.TabIndex = 3;
-            modelLabel.Text = "modelo :";
+            modelLabel.Text = "Modelo :";
             // 
             // yearLabel
             // 
             yearLabel.AutoSize = true;
-            yearLabel.Location = new Point(184, 289);
+            yearLabel.Location = new Point(465, 105);
             yearLabel.Name = "yearLabel";
             yearLabel.Size = new Size(41, 20);
             yearLabel.TabIndex = 4;
-            yearLabel.Text = "año :";
+            yearLabel.Text = "Año :";
             // 
             // label5
             // 
@@ -104,70 +108,74 @@
             // 
             // tittlePanel
             // 
-            tittlePanel.BackColor = Color.White;
+            tittlePanel.BackColor = Color.WhiteSmoke;
+            tittlePanel.BorderStyle = BorderStyle.Fixed3D;
             tittlePanel.Controls.Add(Tittlelabel);
-            tittlePanel.Location = new Point(2, 1);
+            tittlePanel.Location = new Point(187, 2);
             tittlePanel.Name = "tittlePanel";
-            tittlePanel.Size = new Size(1236, 81);
+            tittlePanel.Size = new Size(687, 62);
             tittlePanel.TabIndex = 6;
             // 
             // brandTextBox
             // 
-            brandTextBox.Location = new Point(288, 112);
+            brandTextBox.Location = new Point(102, 94);
+            brandTextBox.Multiline = true;
             brandTextBox.Name = "brandTextBox";
-            brandTextBox.Size = new Size(376, 27);
+            brandTextBox.Size = new Size(314, 30);
             brandTextBox.TabIndex = 7;
             // 
             // modelTextBox
             // 
-            modelTextBox.Location = new Point(288, 201);
+            modelTextBox.Location = new Point(102, 160);
+            modelTextBox.Multiline = true;
             modelTextBox.Name = "modelTextBox";
-            modelTextBox.Size = new Size(376, 27);
+            modelTextBox.Size = new Size(325, 30);
             modelTextBox.TabIndex = 8;
             // 
             // yearTextBox
             // 
-            yearTextBox.Location = new Point(288, 282);
+            yearTextBox.Location = new Point(523, 95);
+            yearTextBox.Multiline = true;
             yearTextBox.Name = "yearTextBox";
-            yearTextBox.Size = new Size(117, 27);
+            yearTextBox.Size = new Size(125, 34);
             yearTextBox.TabIndex = 9;
             // 
             // saveCarButton
             // 
-            saveCarButton.Location = new Point(681, 345);
+            saveCarButton.Location = new Point(109, 35);
             saveCarButton.Name = "saveCarButton";
-            saveCarButton.Size = new Size(94, 29);
+            saveCarButton.Size = new Size(130, 47);
             saveCarButton.TabIndex = 10;
-            saveCarButton.Text = "guardar";
+            saveCarButton.Text = "Guardar";
             saveCarButton.UseVisualStyleBackColor = true;
             saveCarButton.Click += saveCarButton_Click;
             // 
             // editButton
             // 
-            editButton.Location = new Point(879, 345);
+            editButton.Location = new Point(22, 91);
             editButton.Name = "editButton";
-            editButton.Size = new Size(94, 29);
+            editButton.Size = new Size(130, 47);
             editButton.TabIndex = 11;
-            editButton.Text = "editar";
+            editButton.Text = "Editar";
             editButton.UseVisualStyleBackColor = true;
             editButton.Click += editButton_Click;
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(1043, 345);
+            deleteButton.Location = new Point(178, 93);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(94, 29);
+            deleteButton.Size = new Size(130, 47);
             deleteButton.TabIndex = 12;
-            deleteButton.Text = "eliminar";
+            deleteButton.Text = "Eliminar";
             deleteButton.UseVisualStyleBackColor = true;
             deleteButton.Click += deleteButton_Click;
             // 
             // availabilityCheckBox
             // 
             availabilityCheckBox.AutoSize = true;
-            availabilityCheckBox.Location = new Point(332, 345);
+            availabilityCheckBox.Location = new Point(532, 166);
             availabilityCheckBox.Name = "availabilityCheckBox";
-            availabilityCheckBox.Size = new Size(101, 24);
+            availabilityCheckBox.Size = new Size(92, 24);
             availabilityCheckBox.TabIndex = 13;
             availabilityCheckBox.Text = "disponible";
             availabilityCheckBox.UseVisualStyleBackColor = true;
@@ -175,33 +183,54 @@
             // availabilityLabel
             // 
             availabilityLabel.AutoSize = true;
-            availabilityLabel.Location = new Point(187, 354);
+            availabilityLabel.Location = new Point(465, 170);
             availabilityLabel.Name = "availabilityLabel";
-            availabilityLabel.Size = new Size(54, 20);
+            availabilityLabel.Size = new Size(49, 20);
             availabilityLabel.TabIndex = 14;
-            availabilityLabel.Text = "estado";
+            availabilityLabel.Text = "Estado";
             // 
             // backButton
             // 
-            backButton.Location = new Point(12, 112);
+            backButton.BackColor = Color.FromArgb(255, 192, 128);
+            backButton.Location = new Point(4, 2);
             backButton.Name = "backButton";
-            backButton.Size = new Size(94, 29);
+            backButton.Size = new Size(133, 47);
             backButton.TabIndex = 15;
-            backButton.Text = "regresar";
-            backButton.UseVisualStyleBackColor = true;
+            backButton.Text = "Regresar";
+            backButton.UseVisualStyleBackColor = false;
             backButton.Click += backButton_Click;
+            // 
+            // dataVehicleGroupBox
+            // 
+            dataVehicleGroupBox.Location = new Point(4, 65);
+            dataVehicleGroupBox.Name = "dataVehicleGroupBox";
+            dataVehicleGroupBox.Size = new Size(694, 176);
+            dataVehicleGroupBox.TabIndex = 16;
+            dataVehicleGroupBox.TabStop = false;
+            dataVehicleGroupBox.Text = "Datos del Vehículo";
+            // 
+            // registerVehicleDatagroupBox
+            // 
+            registerVehicleDatagroupBox.Controls.Add(saveCarButton);
+            registerVehicleDatagroupBox.Controls.Add(editButton);
+            registerVehicleDatagroupBox.Controls.Add(deleteButton);
+            registerVehicleDatagroupBox.Location = new Point(735, 70);
+            registerVehicleDatagroupBox.Name = "registerVehicleDatagroupBox";
+            registerVehicleDatagroupBox.Size = new Size(314, 171);
+            registerVehicleDatagroupBox.TabIndex = 17;
+            registerVehicleDatagroupBox.TabStop = false;
+            registerVehicleDatagroupBox.Text = "Acciones";
             // 
             // CarsForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1236, 713);
+            BackColor = Color.FromArgb(255, 255, 192);
+            ClientSize = new Size(1061, 491);
+            Controls.Add(registerVehicleDatagroupBox);
             Controls.Add(backButton);
             Controls.Add(availabilityLabel);
             Controls.Add(availabilityCheckBox);
-            Controls.Add(deleteButton);
-            Controls.Add(editButton);
-            Controls.Add(saveCarButton);
             Controls.Add(yearTextBox);
             Controls.Add(modelTextBox);
             Controls.Add(brandTextBox);
@@ -211,11 +240,14 @@
             Controls.Add(modelLabel);
             Controls.Add(brandLabel);
             Controls.Add(CarsDataGridView);
+            Controls.Add(dataVehicleGroupBox);
+            Font = new Font("Tw Cen MT Condensed Extra Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "CarsForm";
             Text = "CarsForm";
             ((System.ComponentModel.ISupportInitialize)CarsDataGridView).EndInit();
             tittlePanel.ResumeLayout(false);
             tittlePanel.PerformLayout();
+            registerVehicleDatagroupBox.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -238,5 +270,7 @@
         private CheckBox availabilityCheckBox;
         private Label availabilityLabel;
         private Button backButton;
+        private GroupBox dataVehicleGroupBox;
+        private GroupBox registerVehicleDatagroupBox;
     }
 }

@@ -40,76 +40,86 @@
             deleteButton = new Button();
             clientDataGridView = new DataGridView();
             BackButton = new Button();
+            clienteDataGroupBox = new GroupBox();
+            clientActiongroupBox = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)clientDataGridView).BeginInit();
+            clienteDataGroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // tittleLabel
             // 
             tittleLabel.AutoSize = true;
-            tittleLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tittleLabel.Location = new Point(415, 12);
+            tittleLabel.Font = new Font("Algerian", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tittleLabel.Location = new Point(417, 12);
+            tittleLabel.Margin = new Padding(4, 0, 4, 0);
             tittleLabel.Name = "tittleLabel";
-            tittleLabel.Size = new Size(72, 28);
+            tittleLabel.Size = new Size(97, 24);
             tittleLabel.TabIndex = 0;
             tittleLabel.Text = "Cliente";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new Point(72, 76);
+            nameLabel.Location = new Point(36, 27);
+            nameLabel.Margin = new Padding(4, 0, 4, 0);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new Size(67, 20);
+            nameLabel.Size = new Size(62, 20);
             nameLabel.TabIndex = 1;
             nameLabel.Text = "Nombre:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new Point(72, 171);
+            emailLabel.Location = new Point(40, 100);
+            emailLabel.Margin = new Padding(4, 0, 4, 0);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new Size(53, 20);
+            emailLabel.Size = new Size(51, 20);
             emailLabel.TabIndex = 2;
             emailLabel.Text = "Email: ";
             // 
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Location = new Point(69, 284);
+            phoneLabel.Location = new Point(37, 200);
+            phoneLabel.Margin = new Padding(4, 0, 4, 0);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new Size(70, 20);
+            phoneLabel.Size = new Size(64, 20);
             phoneLabel.TabIndex = 3;
             phoneLabel.Text = "Telefono:";
             // 
             // nameTextBox
             // 
-            nameTextBox.Location = new Point(72, 112);
-            nameTextBox.Margin = new Padding(3, 4, 3, 4);
+            nameTextBox.Location = new Point(36, 60);
+            nameTextBox.Margin = new Padding(4);
+            nameTextBox.Multiline = true;
             nameTextBox.Name = "nameTextBox";
-            nameTextBox.Size = new Size(330, 27);
+            nameTextBox.Size = new Size(329, 36);
             nameTextBox.TabIndex = 4;
             // 
             // emailTextBox
             // 
-            emailTextBox.Location = new Point(72, 216);
-            emailTextBox.Margin = new Padding(3, 4, 3, 4);
+            emailTextBox.Location = new Point(38, 134);
+            emailTextBox.Margin = new Padding(4);
+            emailTextBox.Multiline = true;
             emailTextBox.Name = "emailTextBox";
-            emailTextBox.Size = new Size(326, 27);
+            emailTextBox.Size = new Size(327, 36);
             emailTextBox.TabIndex = 5;
             // 
             // phoneTextBox
             // 
-            phoneTextBox.Location = new Point(73, 320);
-            phoneTextBox.Margin = new Padding(3, 4, 3, 4);
+            phoneTextBox.Location = new Point(40, 236);
+            phoneTextBox.Margin = new Padding(4);
+            phoneTextBox.Multiline = true;
             phoneTextBox.Name = "phoneTextBox";
-            phoneTextBox.Size = new Size(326, 27);
+            phoneTextBox.Size = new Size(327, 43);
             phoneTextBox.TabIndex = 6;
             // 
             // addButton
             // 
-            addButton.Location = new Point(69, 407);
-            addButton.Margin = new Padding(3, 4, 3, 4);
+            addButton.Location = new Point(104, 426);
+            addButton.Margin = new Padding(4);
             addButton.Name = "addButton";
-            addButton.Size = new Size(86, 31);
+            addButton.Size = new Size(125, 39);
             addButton.TabIndex = 7;
             addButton.Text = "Agregar";
             addButton.UseVisualStyleBackColor = true;
@@ -117,10 +127,10 @@
             // 
             // editButton
             // 
-            editButton.Location = new Point(191, 407);
-            editButton.Margin = new Padding(3, 4, 3, 4);
+            editButton.Location = new Point(177, 378);
+            editButton.Margin = new Padding(4);
             editButton.Name = "editButton";
-            editButton.Size = new Size(86, 31);
+            editButton.Size = new Size(126, 40);
             editButton.TabIndex = 8;
             editButton.Text = "Editar";
             editButton.UseVisualStyleBackColor = true;
@@ -128,10 +138,10 @@
             // 
             // deleteButton
             // 
-            deleteButton.Location = new Point(313, 407);
-            deleteButton.Margin = new Padding(3, 4, 3, 4);
+            deleteButton.Location = new Point(255, 426);
+            deleteButton.Margin = new Padding(4);
             deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(86, 31);
+            deleteButton.Size = new Size(120, 39);
             deleteButton.TabIndex = 9;
             deleteButton.Text = "Eliminar";
             deleteButton.UseVisualStyleBackColor = true;
@@ -139,46 +149,76 @@
             // 
             // clientDataGridView
             // 
+            clientDataGridView.BackgroundColor = SystemColors.Control;
             clientDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            clientDataGridView.Location = new Point(475, 112);
-            clientDataGridView.Margin = new Padding(3, 4, 3, 4);
+            clientDataGridView.Location = new Point(490, 53);
+            clientDataGridView.Margin = new Padding(4);
             clientDataGridView.Name = "clientDataGridView";
             clientDataGridView.RowHeadersWidth = 51;
-            clientDataGridView.Size = new Size(382, 325);
+            clientDataGridView.Size = new Size(484, 412);
             clientDataGridView.TabIndex = 10;
             clientDataGridView.SelectionChanged += clientDataGridView_SelectionChanged;
             // 
             // BackButton
             // 
-            BackButton.Location = new Point(12, 12);
+            BackButton.BackColor = Color.FromArgb(255, 192, 128);
+            BackButton.Location = new Point(7, 6);
+            BackButton.Margin = new Padding(4, 3, 4, 3);
             BackButton.Name = "BackButton";
-            BackButton.Size = new Size(94, 29);
+            BackButton.Size = new Size(104, 37);
             BackButton.TabIndex = 11;
-            BackButton.Text = "regresar";
-            BackButton.UseVisualStyleBackColor = true;
+            BackButton.Text = "Regresar";
+            BackButton.UseVisualStyleBackColor = false;
             BackButton.Click += BackButton_Click;
+            // 
+            // clienteDataGroupBox
+            // 
+            clienteDataGroupBox.Controls.Add(phoneTextBox);
+            clienteDataGroupBox.Controls.Add(emailTextBox);
+            clienteDataGroupBox.Controls.Add(nameTextBox);
+            clienteDataGroupBox.Controls.Add(phoneLabel);
+            clienteDataGroupBox.Controls.Add(emailLabel);
+            clienteDataGroupBox.Controls.Add(nameLabel);
+            clienteDataGroupBox.Location = new Point(26, 53);
+            clienteDataGroupBox.Name = "clienteDataGroupBox";
+            clienteDataGroupBox.Size = new Size(423, 299);
+            clienteDataGroupBox.TabIndex = 12;
+            clienteDataGroupBox.TabStop = false;
+            clienteDataGroupBox.Text = "Datos Personales";
+            // 
+            // clientActiongroupBox
+            // 
+            clientActiongroupBox.Location = new Point(29, 358);
+            clientActiongroupBox.Name = "clientActiongroupBox";
+            clientActiongroupBox.Size = new Size(420, 125);
+            clientActiongroupBox.TabIndex = 13;
+            clientActiongroupBox.TabStop = false;
+            clientActiongroupBox.Text = "Acciones";
             // 
             // ClientForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.FromArgb(255, 255, 192);
+            ClientSize = new Size(992, 485);
+            Controls.Add(clienteDataGroupBox);
             Controls.Add(BackButton);
             Controls.Add(clientDataGridView);
             Controls.Add(deleteButton);
             Controls.Add(editButton);
             Controls.Add(addButton);
-            Controls.Add(phoneTextBox);
-            Controls.Add(emailTextBox);
-            Controls.Add(nameTextBox);
-            Controls.Add(phoneLabel);
-            Controls.Add(emailLabel);
-            Controls.Add(nameLabel);
             Controls.Add(tittleLabel);
-            Margin = new Padding(3, 4, 3, 4);
+            Controls.Add(clientActiongroupBox);
+            Font = new Font("Tw Cen MT Condensed Extra Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Margin = new Padding(4);
             Name = "ClientForm";
+            Padding = new Padding(3, 0, 3, 0);
             Text = "ClientForm";
             ((System.ComponentModel.ISupportInitialize)clientDataGridView).EndInit();
+            clienteDataGroupBox.ResumeLayout(false);
+            clienteDataGroupBox.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -197,5 +237,7 @@
         private Button deleteButton;
         private DataGridView clientDataGridView;
         private Button BackButton;
+        private GroupBox clienteDataGroupBox;
+        private GroupBox clientActiongroupBox;
     }
 }

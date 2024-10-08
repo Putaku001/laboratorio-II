@@ -121,5 +121,8 @@ namespace PresentatioLayer.Forms
             RentForm rentForm = new RentForm();
             rentForm.Show();
         }
+
+       
+
     }
 }
