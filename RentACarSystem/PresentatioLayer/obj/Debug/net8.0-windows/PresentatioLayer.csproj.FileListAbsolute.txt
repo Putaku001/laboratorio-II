@@ -236,3 +236,4 @@ C:\Users\ivanb\OneDrive\Escritorio\rentACar\laboratorio-II\RentACarSystem\Presen
 C:\Users\ivanb\OneDrive\Escritorio\rentACar\laboratorio-II\RentACarSystem\PresentatioLayer\obj\Debug\net8.0-windows\PresentatioLayer.pdb
 C:\Users\ivanb\OneDrive\Escritorio\rentACar\laboratorio-II\RentACarSystem\PresentatioLayer\obj\Debug\net8.0-windows\PresentatioLayer.genruntimeconfig.cache
 C:\Users\ivanb\OneDrive\Escritorio\rentACar\laboratorio-II\RentACarSystem\PresentatioLayer\obj\Debug\net8.0-windows\ref\PresentatioLayer.dll
+C:\Users\ivanb\OneDrive\Escritorio\rentACar\laboratorio-II\RentACarSystem\PresentatioLayer\obj\Debug\net8.0-windows\PresentatioLayer.Forms.RentForm.resources

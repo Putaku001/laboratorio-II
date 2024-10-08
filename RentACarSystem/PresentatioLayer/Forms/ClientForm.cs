@@ -91,6 +91,14 @@ namespace PresentatioLayer.Forms
             }
         }
 
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            RentForm rentForm = new RentForm();
+
+            rentForm.Show();
+        }
     }
 }
 

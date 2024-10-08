@@ -40,7 +40,7 @@ namespace DataAccessLayer.Repositories
         {
             using (var connection = _dbConnect.GetConnection())
             {
-                string query = "INSERT INTO Vehiculos (Marca, Modelo, Año, Disponibilidad) VALUES (@Marca, @Modelo, @Año, @Disponibilidad)D";
+                string query = "INSERT INTO Vehiculos (Marca, Modelo, Año, Disponibilidad) VALUES (@Marca, @Modelo, @Año, @Disponibilidad)";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Marca", car.Brand);
                 command.Parameters.AddWithValue("@Modelo", car.Model);
@@ -68,7 +68,7 @@ namespace DataAccessLayer.Repositories
                 command.ExecuteNonQuery();
             }
         }
-        public void DeleteVehiculo(int CarId)
+        public void DeleteCar(int CarId)
         {
             using (var connection = _dbConnect.GetConnection())
             {
