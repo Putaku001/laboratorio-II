@@ -57,3 +57,25 @@ C:\Users\MINEDUCYT\Desktop\CICLO V\POE\LabII\laboratorio-II\RentACarSystem\Commo
 C:\Users\MINEDUCYT\Desktop\CICLO V\POE\LabII\laboratorio-II\RentACarSystem\CommonLayer\obj\Debug\net8.0\refint\CommonLayer.dll
 C:\Users\MINEDUCYT\Desktop\CICLO V\POE\LabII\laboratorio-II\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.pdb
 C:\Users\MINEDUCYT\Desktop\CICLO V\POE\LabII\laboratorio-II\RentACarSystem\CommonLayer\obj\Debug\net8.0\ref\CommonLayer.dll
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\bin\Debug\net8.0\CommonLayer.deps.json
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\bin\Debug\net8.0\CommonLayer.dll
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\bin\Debug\net8.0\CommonLayer.pdb
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfoInputs.cache
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfo.cs
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.dll
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\refint\CommonLayer.dll
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.pdb
+C:\Users\kenne\Documents\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\ref\CommonLayer.dll
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\bin\Debug\net8.0\CommonLayer.deps.json
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\bin\Debug\net8.0\CommonLayer.dll
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\bin\Debug\net8.0\CommonLayer.pdb
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfoInputs.cache
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.AssemblyInfo.cs
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.dll
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\refint\CommonLayer.dll
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\CommonLayer.pdb
+C:\Users\ivanb\OneDrive\Escritorio\laboratorio-II-main\laboratorio-II-main\RentACarSystem\CommonLayer\obj\Debug\net8.0\ref\CommonLayer.dll

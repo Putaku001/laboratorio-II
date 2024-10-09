@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PresentationLayer.Validation;
 using BusinessLayer.Services;
 using CommonLayer.Entities;
 
@@ -21,6 +22,7 @@ namespace PresentatioLayer.Forms
             InitializeComponent();
             _carService = new CarService();
             LoadCars();
+            CarsDataGridView.SelectionChanged += CarsDataGridView_SelectionChanged;
         }
 
         private void LoadCars()
@@ -31,33 +33,41 @@ namespace PresentatioLayer.Forms
 
         private void saveCarButton_Click(object sender, EventArgs e)
         {
-            if (isEditing)
+            string brandError, modelError, yearError;
+
+            if (!CarsFormValidation.ValidateBrand(brandTextBox.Text, out brandError))
             {
-                Car car = new Car()
-                {
-                    Brand = brandTextBox.Text,
-                    Model = modelTextBox.Text,
-                    Year = int.Parse(yearTextBox.Text),
-                    Availability = availabilityCheckBox.Checked,
-                    CarId = int.Parse(CarsDataGridView.CurrentRow.Cells[0].Value.ToString())
-                };
-                _carService.EditCar(car);
-                LoadCars();
-                isEditing = false;
+                MessageBox.Show(brandError);
+                return;
             }
-            else
+
+            if (!CarsFormValidation.ValidateModel(modelTextBox.Text, out modelError))
             {
-                Car car = new Car()
-                {
-                    Brand = brandTextBox.Text,
-                    Model = modelTextBox.Text,
-                    Year = int.Parse(yearTextBox.Text),
-                    Availability = availabilityCheckBox.Checked,
-                };
-                _carService.AddCar(car);
-                LoadCars();
-                MessageBox.Show("carro guardado");
+                MessageBox.Show(modelError);
+                return;
             }
+
+            if (!CarsFormValidation.ValidateYear(yearTextBox.Text, out yearError))
+            {
+                MessageBox.Show(yearError);
+                return;
+            }
+
+            // Agregar un nuevo carro
+            Car car = new Car()
+            {
+                Brand = brandTextBox.Text,
+                Model = modelTextBox.Text,
+                Year = int.Parse(yearTextBox.Text),
+                Availability = availabilityCheckBox.Checked,
+            };
+
+            _carService.AddCar(car);
+            LoadCars();
+            MessageBox.Show("Carro guardado");
+
+            // Limpiar los campos después de agregar
+            ClearFields();
 
         }
 
@@ -65,25 +75,46 @@ namespace PresentatioLayer.Forms
         {
             if (CarsDataGridView.SelectedRows.Count > 0)
             {
-                brandTextBox.Text = CarsDataGridView.CurrentRow.Cells[1].Value.ToString();
-                modelTextBox.Text = CarsDataGridView.CurrentRow.Cells[2].Value.ToString();
-                yearTextBox.Text = CarsDataGridView.CurrentRow.Cells[3].Value.ToString();
-                if (CarsDataGridView.CurrentRow.Cells[4].Value is bool availability)
+                string brandError, modelError, yearError;
+
+                if (!CarsFormValidation.ValidateBrand(brandTextBox.Text, out brandError))
                 {
-                    availabilityCheckBox.Checked = availability;
+                    MessageBox.Show(brandError);
+                    return;
                 }
-                else
+
+                if (!CarsFormValidation.ValidateModel(modelTextBox.Text, out modelError))
                 {
-                    availabilityCheckBox.Checked = false;
+                    MessageBox.Show(modelError);
+                    return;
                 }
-                isEditing = true;
+
+                if (!CarsFormValidation.ValidateYear(yearTextBox.Text, out yearError))
+                {
+                    MessageBox.Show(yearError);
+                    return;
+                }
+
+                // Editar el carro seleccionado
+                Car car = new Car()
+                {
+                    CarId = int.Parse(CarsDataGridView.CurrentRow.Cells[0].Value.ToString()),
+                    Brand = brandTextBox.Text,
+                    Model = modelTextBox.Text,
+                    Year = int.Parse(yearTextBox.Text),
+                    Availability = availabilityCheckBox.Checked
+                };
+
+                _carService.EditCar(car);
+                LoadCars();
+                MessageBox.Show("Carro actualizado");
+
+                // Limpiar los campos después de editar
+                ClearFields();
             }
             else
             {
-                MessageBox.Show("seleccione un elemento a editar por favor",
-                    "advertencia",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                MessageBox.Show("Seleccione un carro para editar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
@@ -92,16 +123,15 @@ namespace PresentatioLayer.Forms
         {
             if (CarsDataGridView.SelectedRows.Count < 1)
             {
-                MessageBox.Show("por favor seleccione el carro a eliminar",
-                    "advertencia",
+                MessageBox.Show("Por favor, seleccione el carro a eliminar",
+                    "Advertencia",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
             else
             {
-                DialogResult dialogResult = new DialogResult();
-                dialogResult = MessageBox.Show("esta seguro de eliminar este dato",
-                    "warning",
+                DialogResult dialogResult = MessageBox.Show("¿Está seguro de eliminar este dato?",
+                    "Warning",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
@@ -110,7 +140,6 @@ namespace PresentatioLayer.Forms
                     _carService.DeleteCar(CarId);
                     LoadCars();
                 }
-
             }
         }
 
@@ -122,7 +151,29 @@ namespace PresentatioLayer.Forms
             rentForm.Show();
         }
 
-       
+        private void dataVehicleGroupBox_Enter(object sender, EventArgs e)
+        {
 
+        }
+        private void ClearFields()
+        {
+            brandTextBox.Text = "";
+            modelTextBox.Text = "";
+            yearTextBox.Text = "";
+            availabilityCheckBox.Checked = false;
+        }
+
+       
+        private void CarsDataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            if (CarsDataGridView.SelectedRows.Count > 0)
+            {
+                var selectedRow = CarsDataGridView.SelectedRows[0];
+                brandTextBox.Text = selectedRow.Cells["Marca"].Value.ToString();
+                modelTextBox.Text = selectedRow.Cells["Modelo"].Value.ToString();
+                yearTextBox.Text = selectedRow.Cells["Año"].Value.ToString();
+                availabilityCheckBox.Checked = Convert.ToBoolean(selectedRow.Cells["Disponibilidad"].Value);
+            }
+        }
     }
 }
