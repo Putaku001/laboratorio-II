@@ -82,7 +82,7 @@
             clientsLabel.Font = new Font("Algerian", 10F);
             clientsLabel.Location = new Point(18, 48);
             clientsLabel.Name = "clientsLabel";
-            clientsLabel.Size = new Size(156, 15);
+            clientsLabel.Size = new Size(189, 19);
             clientsLabel.TabIndex = 2;
             clientsLabel.Text = "seleccionar cliente";
             // 
@@ -93,7 +93,7 @@
             CarLabel.Font = new Font("Algerian", 10F);
             CarLabel.Location = new Point(35, 126);
             CarLabel.Name = "CarLabel";
-            CarLabel.Size = new Size(148, 15);
+            CarLabel.Size = new Size(179, 19);
             CarLabel.TabIndex = 3;
             CarLabel.Text = "seleccionar carro";
             // 
@@ -104,7 +104,7 @@
             rentDateLabel.Font = new Font("Algerian", 10F);
             rentDateLabel.Location = new Point(507, 19);
             rentDateLabel.Name = "rentDateLabel";
-            rentDateLabel.Size = new Size(125, 15);
+            rentDateLabel.Size = new Size(151, 19);
             rentDateLabel.TabIndex = 4;
             rentDateLabel.Text = "fecha de retiro";
             // 
@@ -115,7 +115,7 @@
             rentReturnLabel.Font = new Font("Algerian", 10F);
             rentReturnLabel.Location = new Point(496, 76);
             rentReturnLabel.Name = "rentReturnLabel";
-            rentReturnLabel.Size = new Size(158, 15);
+            rentReturnLabel.Size = new Size(190, 19);
             rentReturnLabel.TabIndex = 5;
             rentReturnLabel.Text = "fecha de devolucion";
             // 
@@ -160,7 +160,7 @@
             ClientscomboBox.Location = new Point(180, 45);
             ClientscomboBox.Margin = new Padding(3, 2, 3, 2);
             ClientscomboBox.Name = "ClientscomboBox";
-            ClientscomboBox.Size = new Size(133, 22);
+            ClientscomboBox.Size = new Size(133, 24);
             ClientscomboBox.TabIndex = 9;
             // 
             // CarscomboBox
@@ -171,7 +171,7 @@
             CarscomboBox.Location = new Point(192, 122);
             CarscomboBox.Margin = new Padding(3, 2, 3, 2);
             CarscomboBox.Name = "CarscomboBox";
-            CarscomboBox.Size = new Size(133, 22);
+            CarscomboBox.Size = new Size(133, 24);
             CarscomboBox.TabIndex = 10;
             // 
             // rentDateDTP
@@ -179,7 +179,7 @@
             rentDateDTP.Location = new Point(673, 86);
             rentDateDTP.Margin = new Padding(3, 2, 3, 2);
             rentDateDTP.Name = "rentDateDTP";
-            rentDateDTP.Size = new Size(240, 23);
+            rentDateDTP.Size = new Size(240, 27);
             rentDateDTP.TabIndex = 11;
             // 
             // rentReturnDTP
@@ -187,7 +187,7 @@
             rentReturnDTP.Location = new Point(673, 144);
             rentReturnDTP.Margin = new Padding(3, 2, 3, 2);
             rentReturnDTP.Name = "rentReturnDTP";
-            rentReturnDTP.Size = new Size(240, 23);
+            rentReturnDTP.Size = new Size(240, 27);
             rentReturnDTP.TabIndex = 12;
             // 
             // dataGridView1
@@ -195,7 +195,7 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(23, 320);
+            dataGridView1.Location = new Point(27, 331);
             dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -218,7 +218,7 @@
             tittleLabel.Font = new Font("Algerian", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tittleLabel.Location = new Point(332, 9);
             tittleLabel.Name = "tittleLabel";
-            tittleLabel.Size = new Size(386, 32);
+            tittleLabel.Size = new Size(496, 41);
             tittleLabel.TabIndex = 0;
             tittleLabel.Text = "The Brothers Rent A Car";
             // 
@@ -242,7 +242,7 @@
             // 
             // RentForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 14F);
+            AutoScaleDimensions = new SizeF(9F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");

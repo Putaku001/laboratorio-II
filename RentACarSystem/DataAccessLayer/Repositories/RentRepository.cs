@@ -100,5 +100,22 @@ namespace DataAccessLayer.Repositories
             }
             return CarsTable;
         }
+
+        public DataTable GetClients()
+        {
+            DataTable ClientTable = new DataTable();
+
+            using (var connection = _dbConnect.GetConnection())
+            {
+                string query = @"SELECT ClienteID, CONCAT(Nombre,' ', Email) AS ClientName FROM Clientes";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                ClientTable.Load(reader);
+            }
+            return ClientTable;
+        }
     }
 }

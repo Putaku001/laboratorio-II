@@ -18,15 +18,23 @@ namespace PresentatioLayer.Forms
         {
             InitializeComponent();
             _rentService = new RentService();
-            LoadCarsTable();
+            LoadCars();
+            LoadClients();
         }
 
-        public void LoadCarsTable()
+        public void LoadCars()
         {
             CarscomboBox.DataSource = _rentService.GetCars();
             CarscomboBox.DisplayMember = "CarFullName";
             CarscomboBox.ValueMember = "VehiculoID";
 
+        }
+
+        public void LoadClients()
+        {
+            ClientscomboBox.DataSource = _rentService.GetClients();
+            ClientscomboBox.DisplayMember = "ClientName";
+            ClientscomboBox.ValueMember = "ClienteID";
         }
         private void clientsButton_Click(object sender, EventArgs e)
         {

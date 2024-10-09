@@ -21,5 +21,10 @@ namespace BusinessLayer.Services
         {
             return _rentRepository.GetCars();
         }
+
+        public DataTable GetClients()
+        {
+            return _rentRepository.GetClients();
+        }
     }
 }
