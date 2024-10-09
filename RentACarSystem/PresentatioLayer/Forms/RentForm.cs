@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,21 @@ namespace PresentatioLayer.Forms
 {
     public partial class RentForm : Form
     {
+        private RentService _rentService;
         public RentForm()
         {
             InitializeComponent();
+            _rentService = new RentService();
+            LoadCarsTable();
         }
 
+        public void LoadCarsTable()
+        {
+            CarscomboBox.DataSource = _rentService.GetCars();
+            CarscomboBox.DisplayMember = "CarFullName";
+            CarscomboBox.ValueMember = "VehiculoID";
+
+        }
         private void clientsButton_Click(object sender, EventArgs e)
         {
             this.Hide();

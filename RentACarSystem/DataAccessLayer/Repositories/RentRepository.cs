@@ -82,5 +82,23 @@ namespace DataAccessLayer.Repositories
                 command.ExecuteNonQuery();
             }
         }
+
+        public DataTable GetCars()
+        {
+            DataTable CarsTable = new DataTable();
+
+            using (var connection = _dbConnect.GetConnection())
+            {
+                string query = @"SELECT VehiculoID, CONCAT(Marca, ' ', Modelo) AS CarFullName FROM Vehiculos
+                                WHERE Disponibilidad=1";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+                CarsTable.Load(reader);
+            }
+            return CarsTable;
+        }
     }
 }
