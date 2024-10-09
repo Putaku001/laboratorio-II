@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PresentationLayer.Validation;
 using System.Windows.Forms;
 
 namespace PresentatioLayer.Forms
@@ -15,12 +16,14 @@ namespace PresentatioLayer.Forms
     public partial class ClientForm : Form
     {
         private ClientRepository _clientRepository;
+        public bool isEditing = false;
 
         public ClientForm()
         {
             InitializeComponent();
             _clientRepository = new ClientRepository();
             LoadClients();
+            clientDataGridView.SelectionChanged += clientDataGridView_SelectionChanged;
         }
 
         private void LoadClients()
@@ -46,6 +49,26 @@ namespace PresentatioLayer.Forms
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            string nameError, phoneError, emailError;
+
+            if (!ClientFormValidation.ValidateName(nameTextBox.Text, out nameError))
+            {
+                MessageBox.Show(nameError);
+                return;
+            }
+
+            if (!ClientFormValidation.ValidatePhone(phoneTextBox.Text, out phoneError))
+            {
+                MessageBox.Show(phoneError);
+                return;
+            }
+
+            if (!ClientFormValidation.ValidateEmail(emailTextBox.Text, out emailError))
+            {
+                MessageBox.Show(emailError);
+                return;
+            }
+
             Client client = new Client
             {
                 Name = nameTextBox.Text,
@@ -54,6 +77,8 @@ namespace PresentatioLayer.Forms
             };
 
             _clientRepository.AddClient(client);
+            MessageBox.Show("Cliente agregado con éxito");
+            ClearForm(); 
             LoadClients();
         }
 
@@ -61,6 +86,26 @@ namespace PresentatioLayer.Forms
         {
             if (clientDataGridView.SelectedRows.Count > 0)
             {
+                string nameError, phoneError, emailError;
+
+                if (!ClientFormValidation.ValidateName(nameTextBox.Text, out nameError))
+                {
+                    MessageBox.Show(nameError);
+                    return;
+                }
+
+                if (!ClientFormValidation.ValidatePhone(phoneTextBox.Text, out phoneError))
+                {
+                    MessageBox.Show(phoneError);
+                    return;
+                }
+
+                if (!ClientFormValidation.ValidateEmail(emailTextBox.Text, out emailError))
+                {
+                    MessageBox.Show(emailError);
+                    return;
+                }
+
                 var selectedRow = clientDataGridView.SelectedRows[0];
                 Client client = new Client
                 {
@@ -71,7 +116,16 @@ namespace PresentatioLayer.Forms
                 };
 
                 _clientRepository.EditClient(client);
+                MessageBox.Show("Cliente editado con éxito");
+                ClearForm();
                 LoadClients();
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un cliente para editar, por favor.",
+                    "Advertencia",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
             }
         }
 
@@ -86,11 +140,25 @@ namespace PresentatioLayer.Forms
                 if (result == DialogResult.Yes)
                 {
                     _clientRepository.DeleteClient(clientId);
+                    MessageBox.Show("Cliente eliminado con éxito");
+                    ClearForm();
                     LoadClients();
                 }
             }
+            else
+            {
+                MessageBox.Show("Seleccione un cliente para eliminar, por favor.",
+                    "Advertencia",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
-
+        private void ClearForm()
+        {
+            nameTextBox.Text = string.Empty;
+            phoneTextBox.Text = string.Empty;
+            emailTextBox.Text = string.Empty;
+        }
         private void BackButton_Click(object sender, EventArgs e)
         {
             this.Hide();

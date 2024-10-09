@@ -42,11 +42,15 @@
             CarscomboBox = new ComboBox();
             rentDateDTP = new DateTimePicker();
             rentReturnDTP = new DateTimePicker();
-            dataGridView1 = new DataGridView();
+            rentsDataGridView = new DataGridView();
             titlePrincipalFormPanel = new Panel();
             tittleLabel = new Label();
             newRentGroupBox = new GroupBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            returnTimeDTP = new DateTimePicker();
+            rentTimeDTP = new DateTimePicker();
+            returnTimeLabel = new Label();
+            rentTimeLabel = new Label();
+            ((System.ComponentModel.ISupportInitialize)rentsDataGridView).BeginInit();
             titlePrincipalFormPanel.SuspendLayout();
             newRentGroupBox.SuspendLayout();
             SuspendLayout();
@@ -82,7 +86,7 @@
             clientsLabel.Font = new Font("Algerian", 10F);
             clientsLabel.Location = new Point(18, 48);
             clientsLabel.Name = "clientsLabel";
-            clientsLabel.Size = new Size(156, 15);
+            clientsLabel.Size = new Size(189, 19);
             clientsLabel.TabIndex = 2;
             clientsLabel.Text = "seleccionar cliente";
             // 
@@ -93,7 +97,7 @@
             CarLabel.Font = new Font("Algerian", 10F);
             CarLabel.Location = new Point(35, 126);
             CarLabel.Name = "CarLabel";
-            CarLabel.Size = new Size(148, 15);
+            CarLabel.Size = new Size(179, 19);
             CarLabel.TabIndex = 3;
             CarLabel.Text = "seleccionar carro";
             // 
@@ -104,7 +108,7 @@
             rentDateLabel.Font = new Font("Algerian", 10F);
             rentDateLabel.Location = new Point(507, 19);
             rentDateLabel.Name = "rentDateLabel";
-            rentDateLabel.Size = new Size(125, 15);
+            rentDateLabel.Size = new Size(151, 19);
             rentDateLabel.TabIndex = 4;
             rentDateLabel.Text = "fecha de retiro";
             // 
@@ -115,7 +119,7 @@
             rentReturnLabel.Font = new Font("Algerian", 10F);
             rentReturnLabel.Location = new Point(496, 76);
             rentReturnLabel.Name = "rentReturnLabel";
-            rentReturnLabel.Size = new Size(158, 15);
+            rentReturnLabel.Size = new Size(190, 19);
             rentReturnLabel.TabIndex = 5;
             rentReturnLabel.Text = "fecha de devolucion";
             // 
@@ -130,6 +134,7 @@
             saveRentButton.TabIndex = 6;
             saveRentButton.Text = "guardar";
             saveRentButton.UseVisualStyleBackColor = false;
+            saveRentButton.Click += saveRentButton_Click;
             // 
             // editRentButton
             // 
@@ -160,7 +165,7 @@
             ClientscomboBox.Location = new Point(180, 45);
             ClientscomboBox.Margin = new Padding(3, 2, 3, 2);
             ClientscomboBox.Name = "ClientscomboBox";
-            ClientscomboBox.Size = new Size(133, 22);
+            ClientscomboBox.Size = new Size(133, 24);
             ClientscomboBox.TabIndex = 9;
             // 
             // CarscomboBox
@@ -171,36 +176,38 @@
             CarscomboBox.Location = new Point(192, 122);
             CarscomboBox.Margin = new Padding(3, 2, 3, 2);
             CarscomboBox.Name = "CarscomboBox";
-            CarscomboBox.Size = new Size(133, 22);
+            CarscomboBox.Size = new Size(133, 24);
             CarscomboBox.TabIndex = 10;
             // 
             // rentDateDTP
             // 
+            rentDateDTP.CustomFormat = "";
             rentDateDTP.Location = new Point(673, 86);
             rentDateDTP.Margin = new Padding(3, 2, 3, 2);
             rentDateDTP.Name = "rentDateDTP";
-            rentDateDTP.Size = new Size(240, 23);
+            rentDateDTP.Size = new Size(240, 27);
             rentDateDTP.TabIndex = 11;
+            rentDateDTP.Value = new DateTime(2024, 10, 9, 11, 41, 40, 0);
             // 
             // rentReturnDTP
             // 
-            rentReturnDTP.Location = new Point(673, 144);
+            rentReturnDTP.Location = new Point(711, 68);
             rentReturnDTP.Margin = new Padding(3, 2, 3, 2);
             rentReturnDTP.Name = "rentReturnDTP";
-            rentReturnDTP.Size = new Size(240, 23);
+            rentReturnDTP.Size = new Size(240, 27);
             rentReturnDTP.TabIndex = 12;
             // 
-            // dataGridView1
+            // rentsDataGridView
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
-            dataGridView1.BackgroundColor = SystemColors.GradientActiveCaption;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(23, 320);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(996, 190);
-            dataGridView1.TabIndex = 13;
+            rentsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            rentsDataGridView.BackgroundColor = SystemColors.GradientActiveCaption;
+            rentsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            rentsDataGridView.Location = new Point(27, 331);
+            rentsDataGridView.Margin = new Padding(3, 2, 3, 2);
+            rentsDataGridView.Name = "rentsDataGridView";
+            rentsDataGridView.RowHeadersWidth = 51;
+            rentsDataGridView.Size = new Size(996, 190);
+            rentsDataGridView.TabIndex = 13;
             // 
             // titlePrincipalFormPanel
             // 
@@ -218,13 +225,18 @@
             tittleLabel.Font = new Font("Algerian", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tittleLabel.Location = new Point(332, 9);
             tittleLabel.Name = "tittleLabel";
-            tittleLabel.Size = new Size(386, 32);
+            tittleLabel.Size = new Size(496, 41);
             tittleLabel.TabIndex = 0;
             tittleLabel.Text = "The Brothers Rent A Car";
             // 
             // newRentGroupBox
             // 
             newRentGroupBox.BackColor = SystemColors.ControlDark;
+            newRentGroupBox.Controls.Add(returnTimeDTP);
+            newRentGroupBox.Controls.Add(rentTimeDTP);
+            newRentGroupBox.Controls.Add(returnTimeLabel);
+            newRentGroupBox.Controls.Add(rentReturnDTP);
+            newRentGroupBox.Controls.Add(rentTimeLabel);
             newRentGroupBox.Controls.Add(CarscomboBox);
             newRentGroupBox.Controls.Add(ClientscomboBox);
             newRentGroupBox.Controls.Add(rentReturnLabel);
@@ -240,18 +252,53 @@
             newRentGroupBox.TabStop = false;
             newRentGroupBox.Text = "Renta de Vehiculo";
             // 
+            // returnTimeDTP
+            // 
+            returnTimeDTP.Format = DateTimePickerFormat.Time;
+            returnTimeDTP.Location = new Point(662, 140);
+            returnTimeDTP.Name = "returnTimeDTP";
+            returnTimeDTP.ShowUpDown = true;
+            returnTimeDTP.Size = new Size(250, 27);
+            returnTimeDTP.TabIndex = 14;
+            // 
+            // rentTimeDTP
+            // 
+            rentTimeDTP.Format = DateTimePickerFormat.Time;
+            rentTimeDTP.Location = new Point(662, 107);
+            rentTimeDTP.Name = "rentTimeDTP";
+            rentTimeDTP.ShowUpDown = true;
+            rentTimeDTP.Size = new Size(250, 27);
+            rentTimeDTP.TabIndex = 13;
+            // 
+            // returnTimeLabel
+            // 
+            returnTimeLabel.AutoSize = true;
+            returnTimeLabel.Location = new Point(496, 143);
+            returnTimeLabel.Name = "returnTimeLabel";
+            returnTimeLabel.Size = new Size(130, 16);
+            returnTimeLabel.TabIndex = 12;
+            returnTimeLabel.Text = "hora de entrga";
+            // 
+            // rentTimeLabel
+            // 
+            rentTimeLabel.AutoSize = true;
+            rentTimeLabel.Location = new Point(497, 107);
+            rentTimeLabel.Name = "rentTimeLabel";
+            rentTimeLabel.Size = new Size(124, 16);
+            rentTimeLabel.TabIndex = 11;
+            rentTimeLabel.Text = "hora de retiro";
+            // 
             // RentForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 14F);
+            AutoScaleDimensions = new SizeF(9F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1043, 521);
+            ClientSize = new Size(1153, 642);
             Controls.Add(titlePrincipalFormPanel);
             Controls.Add(saveRentButton);
-            Controls.Add(dataGridView1);
-            Controls.Add(rentReturnDTP);
+            Controls.Add(rentsDataGridView);
             Controls.Add(rentDateDTP);
             Controls.Add(deleteRentButton);
             Controls.Add(editRentButton);
@@ -261,7 +308,7 @@
             Name = "RentForm";
             Text = "RentForm";
             FormClosing += RentForm_FormClosing;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)rentsDataGridView).EndInit();
             titlePrincipalFormPanel.ResumeLayout(false);
             titlePrincipalFormPanel.PerformLayout();
             newRentGroupBox.ResumeLayout(false);
@@ -284,9 +331,13 @@
         private ComboBox CarscomboBox;
         private DateTimePicker rentDateDTP;
         private DateTimePicker rentReturnDTP;
-        private DataGridView dataGridView1;
+        private DataGridView rentsDataGridView;
         private Panel titlePrincipalFormPanel;
         private Label tittleLabel;
         private GroupBox newRentGroupBox;
+        private DateTimePicker returnTimeDTP;
+        private DateTimePicker rentTimeDTP;
+        private Label returnTimeLabel;
+        private Label rentTimeLabel;
     }
 }
