@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Repositories;
+﻿using CommonLayer.Entities;
+using DataAccessLayer.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -25,6 +26,16 @@ namespace BusinessLayer.Services
         public DataTable GetClients()
         {
             return _rentRepository.GetClients();
+        }
+
+        public DataTable GetRents()
+        {
+            return _rentRepository.GetRents();
+        }
+
+        public void AddRent(Rent rent)
+        {
+            _rentRepository.AddRent(rent);
         }
     }
 }

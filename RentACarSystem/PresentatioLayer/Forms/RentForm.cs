@@ -17,9 +17,13 @@ namespace PresentatioLayer.Forms
         public RentForm()
         {
             InitializeComponent();
+            rentTimeDTP.Format=DateTimePickerFormat.Time;
+            returnTimeDTP.Format= DateTimePickerFormat.Time;
             _rentService = new RentService();
+            LoadRents();
             LoadCars();
             LoadClients();
+            
         }
 
         public void LoadCars()
@@ -35,6 +39,11 @@ namespace PresentatioLayer.Forms
             ClientscomboBox.DataSource = _rentService.GetClients();
             ClientscomboBox.DisplayMember = "ClientName";
             ClientscomboBox.ValueMember = "ClienteID";
+        }
+
+        public void LoadRents()
+        {
+            rentsDataGridView.DataSource = _rentService.GetRents();
         }
         private void clientsButton_Click(object sender, EventArgs e)
         {
@@ -56,6 +65,8 @@ namespace PresentatioLayer.Forms
             Application.Exit();
         }
 
-       
-    }
-}
+        private void saveRentButton_Click(object sender, EventArgs e)
+        {
+
+        }
+    }}

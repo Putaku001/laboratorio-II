@@ -10,8 +10,12 @@ namespace CommonLayer.Entities
     {
         public int RentID { get; set; }
         public int ClientID { get; set; }
-        public int CArID { get; set; }
+        public int CarID { get; set; }
         public DateTime RentDate { get; set; }
+
+        public DateTime RentTime { get; set; }
         public DateTime? ReturnDate{ get; set; }
+
+        public DateTime ReturnTime{ get; set; }
     }
 }
