@@ -1,5 +1,0 @@
--se actualizo el clientRepository
--se creo el formulario = "clientForm"
-(el clientForm solo es preliminar este debe mejorarse)
--se agrego conexion con capa DataAccessLayer al formulario clientForm
-//conectar otra ves con Database 
