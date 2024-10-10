@@ -17,13 +17,13 @@ namespace PresentatioLayer.Forms
         public RentForm()
         {
             InitializeComponent();
-            rentTimeDTP.Format=DateTimePickerFormat.Time;
-            returnTimeDTP.Format= DateTimePickerFormat.Time;
+            rentTimeDTP.Format = DateTimePickerFormat.Time;
+            returnTimeDTP.Format = DateTimePickerFormat.Time;
             _rentService = new RentService();
             LoadRents();
             LoadCars();
             LoadClients();
-            
+
         }
 
         public void LoadCars()
@@ -65,8 +65,5 @@ namespace PresentatioLayer.Forms
             Application.Exit();
         }
 
-        private void saveRentButton_Click(object sender, EventArgs e)
-        {
-
-        }
-    }}
+    }
+}

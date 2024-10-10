@@ -54,7 +54,7 @@
             tittleLabel.Location = new Point(574, 21);
             tittleLabel.Margin = new Padding(4, 0, 4, 0);
             tittleLabel.Name = "tittleLabel";
-            tittleLabel.Size = new Size(188, 46);
+            tittleLabel.Size = new Size(97, 24);
             tittleLabel.TabIndex = 0;
             tittleLabel.Text = "Cliente";
             // 
@@ -64,17 +64,17 @@
             nameLabel.Location = new Point(36, 27);
             nameLabel.Margin = new Padding(4, 0, 4, 0);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new Size(122, 38);
+            nameLabel.Size = new Size(62, 20);
             nameLabel.TabIndex = 1;
             nameLabel.Text = "Nombre:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new Point(40, 100);
+            emailLabel.Location = new Point(40, 104);
             emailLabel.Margin = new Padding(4, 0, 4, 0);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new Size(98, 38);
+            emailLabel.Size = new Size(51, 20);
             emailLabel.TabIndex = 2;
             emailLabel.Text = "Email: ";
             // 
@@ -84,7 +84,7 @@
             phoneLabel.Location = new Point(37, 200);
             phoneLabel.Margin = new Padding(4, 0, 4, 0);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new Size(126, 38);
+            phoneLabel.Size = new Size(64, 20);
             phoneLabel.TabIndex = 3;
             phoneLabel.Text = "Telefono:";
             // 
@@ -117,52 +117,55 @@
             // 
             // addButton
             // 
+            addButton.BackColor = Color.Aquamarine;
             addButton.Location = new Point(33, 68);
             addButton.Margin = new Padding(4);
             addButton.Name = "addButton";
             addButton.Size = new Size(214, 39);
             addButton.TabIndex = 7;
             addButton.Text = "Agregar";
-            addButton.UseVisualStyleBackColor = true;
+            addButton.UseVisualStyleBackColor = false;
             addButton.Click += addButton_Click;
             // 
             // editButton
             // 
+            editButton.BackColor = Color.Aquamarine;
             editButton.Location = new Point(182, 396);
             editButton.Margin = new Padding(4);
             editButton.Name = "editButton";
             editButton.Size = new Size(215, 40);
             editButton.TabIndex = 8;
             editButton.Text = "Editar";
-            editButton.UseVisualStyleBackColor = true;
+            editButton.UseVisualStyleBackColor = false;
             editButton.Click += editButton_Click;
             // 
             // deleteButton
             // 
+            deleteButton.BackColor = Color.Aquamarine;
             deleteButton.Location = new Point(255, 68);
             deleteButton.Margin = new Padding(4);
             deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(209, 39);
             deleteButton.TabIndex = 9;
             deleteButton.Text = "Eliminar";
-            deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.UseVisualStyleBackColor = false;
             deleteButton.Click += deleteButton_Click;
             // 
             // clientDataGridView
             // 
             clientDataGridView.BackgroundColor = SystemColors.Control;
             clientDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            clientDataGridView.Location = new Point(574, 71);
+            clientDataGridView.Location = new Point(574, 88);
             clientDataGridView.Margin = new Padding(4);
             clientDataGridView.Name = "clientDataGridView";
             clientDataGridView.RowHeadersWidth = 51;
-            clientDataGridView.Size = new Size(604, 412);
+            clientDataGridView.Size = new Size(488, 348);
             clientDataGridView.TabIndex = 10;
             clientDataGridView.SelectionChanged += clientDataGridView_SelectionChanged;
             // 
             // BackButton
             // 
-            BackButton.BackColor = Color.FromArgb(255, 192, 128);
+            BackButton.BackColor = Color.Aquamarine;
             BackButton.Location = new Point(7, 6);
             BackButton.Margin = new Padding(4, 3, 4, 3);
             BackButton.Name = "BackButton";
@@ -180,6 +183,8 @@
             clienteDataGroupBox.Controls.Add(phoneLabel);
             clienteDataGroupBox.Controls.Add(emailLabel);
             clienteDataGroupBox.Controls.Add(nameLabel);
+            clienteDataGroupBox.FlatStyle = FlatStyle.System;
+            clienteDataGroupBox.ForeColor = SystemColors.ActiveCaptionText;
             clienteDataGroupBox.Location = new Point(31, 71);
             clienteDataGroupBox.Name = "clienteDataGroupBox";
             clienteDataGroupBox.Size = new Size(512, 299);
@@ -200,11 +205,11 @@
             // 
             // ClientForm
             // 
-            AutoScaleDimensions = new SizeF(15F, 38F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.FromArgb(255, 255, 192);
-            ClientSize = new Size(1215, 600);
+            BackColor = Color.LightGray;
+            ClientSize = new Size(1070, 497);
             Controls.Add(clienteDataGroupBox);
             Controls.Add(BackButton);
             Controls.Add(clientDataGridView);
@@ -217,6 +222,7 @@
             Name = "ClientForm";
             Padding = new Padding(3, 0, 3, 0);
             Text = "ClientForm";
+            TransparencyKey = Color.LightGreen;
             ((System.ComponentModel.ISupportInitialize)clientDataGridView).EndInit();
             clienteDataGroupBox.ResumeLayout(false);
             clienteDataGroupBox.PerformLayout();
