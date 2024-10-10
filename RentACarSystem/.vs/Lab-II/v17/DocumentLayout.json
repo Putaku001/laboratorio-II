@@ -3,7 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\CICLO V\\POE\\Laboratorio2\\laboratorio-II\\RentACarSystem\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|c:\\users\\mineducyt\\desktop\\ciclo v\\poe\\laboratorio2\\laboratorio-ii\\rentacarsystem\\presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|c:\\users\\mineducyt\\desktop\\ciclo v\\poe\\labii\\laboratorio-ii\\rentacarsystem\\presentatiolayer\\forms\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|solutionrelative:presentatiolayer\\forms\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\rentacarsystem\\dataaccesslayer\\repositories\\rentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48AC215E-2C88-4B2E-96C3-B31FF32A4D5F}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\repositories\\rentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> b6b2122b9f9af46b7f9edb2fecbba2466e753972
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\rentacarsystem\\presentatiolayer\\forms\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|solutionrelative:presentatiolayer\\forms\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|C:\\Users\\MINEDUCYT\\Desktop\\CICLO V\\POE\\LabII\\laboratorio-II\\RentACarSystem\\presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\RentACarSystem\\presentatiolayer\\forms\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|solutionrelative:presentatiolayer\\forms\\rentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\rentacarsystem\\commonlayer\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|solutionrelative:commonlayer\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|c:\\users\\ivanb\\onedrive\\escritorio\\rentacar\\laboratorio-ii\\rentacarsystem\\commonlayer\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9D3A9C9-8701-4414-AB04-C00A8B1BF149}|CommonLayer\\CommonLayer.csproj|solutionrelative:commonlayer\\entities\\rent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|C:\\Users\\ivanb\\OneDrive\\Escritorio\\rentACar\\laboratorio-II\\RentACarSystem\\presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> b6b2122b9f9af46b7f9edb2fecbba2466e753972
+>>>>>>> 1fa095f6d772d941bf2b3ce8f09675f202143ee4
       "RelativeMoniker": "D:0:0:{25D936CD-2FB7-4923-B05D-6AC89E5EEB4A}|PresentatioLayer\\PresentatioLayer.csproj|solutionrelative:presentatiolayer\\forms\\carsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
